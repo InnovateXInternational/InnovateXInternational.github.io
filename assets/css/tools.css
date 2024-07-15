@@ -1,0 +1,15 @@
+input.form-control, textarea.form-control{
+    border: 1px solid var(--border);
+    outline: none;
+    padding: 0.8rem;
+    background-color: transparent;
+    border-radius: 0.5rem;
+    margin: 5px 0px;
+    transition-property: all;
+    transition-duration: .2s;
+    transition-timing-function: ease;
+    transition-delay: 0.05s;
+}
+input.form-control:focus, textarea.form-control:focus{
+    border: 1px solid var(--highlight);
+}

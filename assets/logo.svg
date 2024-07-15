@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="170px" height="170px" viewBox="0 0 170 170" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M0 0L118.518 0L118.518 100.98L0 100.98L0 0Z" id="path_1" />
+    <rect width="170" height="170" id="artboard_1" />
+    <clipPath id="clip_1">
+      <use xlink:href="#artboard_1" clip-rule="evenodd" />
+    </clipPath>
+    <clipPath id="mask_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="Artboard" clip-path="url(#clip_1)">
+    <use xlink:href="#artboard_1" stroke="none" fill="#060419" fill-opacity="0" />
+    <g id="rect278-2" transform="translate(35.98242 47.51001)">
+      <path d="M0 0L118.518 0L118.518 100.98L0 100.98L0 0Z" id="Background" fill="none" fill-rule="evenodd" stroke="none" />
+      <g clip-path="url(#mask_1)">
+        <path d="M14.7734 27.2518L18.031 13.6259C18.9305 9.8632 21.0661 6.65155 24.4378 3.99093C27.8095 1.33031 31.4297 0 35.2984 0L107.41 0C111.279 0 114.263 1.33031 116.362 3.99093C118.462 6.65155 119.062 9.8632 118.162 13.6259L103.794 73.7282L100.536 87.3541C99.6366 91.1168 97.501 94.3284 94.1293 96.9891C90.7576 99.6497 87.1374 100.98 83.2687 100.98L11.157 100.98C7.28832 100.98 4.3042 99.6497 2.20468 96.9891C0.105157 94.3284 -0.494829 91.1168 0.404719 87.3541L14.7734 27.2518Z" transform="translate(-0.024780273 0)" id="rect278" fill="#005DF5" fill-opacity="0.8" fill-rule="evenodd" stroke="none" />
+      </g>
+    </g>
+    <g id="rect278" transform="translate(15.482422 25.51001)">
+      <path d="M0 0L118.518 0L118.518 100.98L0 100.98L0 0Z" id="Background" fill="none" fill-rule="evenodd" stroke="none" />
+      <g clip-path="url(#mask_1)">
+        <path d="M14.7734 27.2518L18.031 13.6259C18.9305 9.8632 21.0661 6.65155 24.4378 3.99093C27.8095 1.33031 31.4297 0 35.2984 0L107.41 0C111.279 0 114.263 1.33031 116.362 3.99093C118.462 6.65155 119.062 9.8632 118.162 13.6259L103.794 73.7282L100.536 87.3541C99.6366 91.1168 97.501 94.3284 94.1293 96.9891C90.7576 99.6497 87.1374 100.98 83.2687 100.98L11.157 100.98C7.28832 100.98 4.3042 99.6497 2.20468 96.9891C0.105157 94.3284 -0.494829 91.1168 0.404719 87.3541L14.7734 27.2518Z" transform="translate(-0.024780273 0)" id="rect278" fill="#2DEBF3" fill-opacity="0.8" fill-rule="evenodd" stroke="none" />
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,333 @@
+@import url(./tools.css);
+@import url(wind.css);
+@import url(./../vendor/bootstrap-icons/bootstrap-icons.css);
+@import url(index-scroll.css);
+@import url(./../vendor/animate.min.css);
+:root{
+    color-scheme: dark;
+}
+html{
+    position: relative;
+    scroll-padding: 2rem;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--primary);
+    color: var(--textcolor);
+    height: 100vh;
+    width: 100vw;
+    background-image: radial-gradient(at top, rgba(30, 33, 232, 0.15), transparent, transparent, transparent);
+    background-size: 150vw 400px;
+    background-position: -25vw 0px;
+    background-repeat: no-repeat;
+    --game-w : 4rem;
+    --game-h: 6rem;
+    --game-f : 3rem;
+    --dot-size:110px;
+}
+::-webkit-scrollbar-track, ::-webkit-scrollbar-thumb{
+    background-color: var(--primary);
+}
+.font-display{
+    font-family: Google Sans Display,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+}
+@media (max-width:768px) {
+    *{
+        --game-w:2rem;
+        --game-h:3rem;
+        --game-f:1.5rem;
+        --dot-size:75px;
+    }
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden hidden;
+    background-image: url(./../star.svg);
+    background-size: var(--dot-size) auto;
+    background-position: 0px 0px;
+    animation: starmotion 35s linear 0ms infinite;
+}
+nav{
+    border-right: 1px solid var(--border);
+}
+body:has(nav #btn-nav-toggle:hover) main{
+    filter: blur(100px);
+}
+nav:has(#btn-nav-toggle:hover) > *:not(div.nav-list){
+    filter: blur(100px);
+}
+nav:has(#btn-nav-toggle:hover) > .nav-list{
+    z-index: 99999;
+    display: flex;position: fixed;
+    top: 0px;
+    left: 0px;
+}
+nav .nav-list a{
+    transition-property: color;
+    transition-duration: .3s;
+    transition-delay:20ms;
+    transition-timing-function: ease-in-out;
+}
+nav .nav-list a:hover{
+    color: white!important;
+}
+nav a i.bi{
+    margin-block: 5px;
+}
+nav a svg{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+main{
+    overflow: hidden scroll;
+}
+.font-display{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.game, .game-start{
+    display: grid;
+    grid-template-columns: var(--game-w) var(--game-w) var(--game-w) var(--game-w) var(--game-w) var(--game-w) var(--game-w) var(--game-w) var(--game-w) var(--game-w) var(--game-w) var(--game-w);
+    grid-template-rows: var(--game-h) var(--game-h) var(--game-h);
+}
+.game > div,.game-start > div{
+    font-size: var(--game-f);
+    border: 1px solid var(--border);
+    font-weight: bolder;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5rem);
+    user-select: none;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 0ms;
+}
+.game > div:empty, .game-start > div:empty{
+    border-width: 0px;
+}
+.game i.bi:not(.no-bold):before, .game-start i.bi:not(.no-bold):before{
+    font-weight: bolder!important;
+}
+.game-start i{
+    font-size: 2.5rem!important;
+    margin-top: 5px;
+    animation: rotatex 1.5s ease-in-out 0ms 1;
+}
+
+
+@keyframes starmotion {
+    from{
+        background-position:0px 0px;
+    }
+    to{
+        background-position:0px -100vh;
+    }
+}
+@keyframes rotatex {
+    from{
+        rotate: 90deg;
+    }
+    to{
+        rotate: 0deg;
+    }
+}
+@keyframes bouncex {
+    0%, 100% {
+        transform: translateX(-10%);
+        animation-timing-function: cubic-bezier(0.8,0,1,1);
+    }
+    50% {
+        transform: translateX(10%);
+        animation-timing-function: cubic-bezier(0,0,0.2,1);
+    }
+}
+.animate-bouncex {
+    animation: bouncex 2s infinite;
+}
+@keyframes shake {
+    0% { transform: translate(0, 0); }
+    10% { transform: translate(-1px, -1px); }
+    20% { transform: translate(-2px, 0); }
+    30% { transform: translate(1px, 1px); }
+    40% { transform: translate(2px, 0); }
+    50% { transform: translate(0, -2px); }
+    60% { transform: translate(-1px, 1px); }
+    70% { transform: translate(-2px, 1px); }
+    80% { transform: translate(1px, 2px); }
+    90% { transform: translate(2px, -1px); }
+    100% { transform: translate(0, 0); }
+}
+
+.rocket-launch {
+    animation: shake .5s infinite;
+}
+@media (max-width: 640px) {
+    nav {
+        background-color: transparent !important;
+    }
+}
+/* Hero Section transition */
+@keyframes move-down{
+    to{
+        transform: translateY(6rem);
+    }
+}
+@keyframes move-up{
+    to{
+        transform: translateY(-6rem);
+    }
+}
+@keyframes show-border {
+    from{
+        border-color: transparent;
+        border-width: 0px;
+    }
+    to{
+        border-color: var(--border);
+        border-width:1px;
+    }
+}
+@keyframes disappear {
+    0%{
+        display: grid;
+        opacity: 1;
+    }
+    99%{
+        opacity: 1;
+    }
+    100%{
+        display: none;
+        opacity: 0;
+    }
+}
+@keyframes pulse {
+    to{
+        stroke-opacity: .5;
+    }
+}
+.game-start.anime > div{
+    backdrop-filter: blur(0px);
+    animation: show-border 5s ease-in-out 0.5s 1;
+    border-width: 1px;
+}
+.game-start.anime > div:not(:empty):is(.has-text){
+    animation: move-down 5s ease-in-out 0s 1;
+}
+.game-start.anime{
+    animation: disappear 5s linear 0s 1;
+    opacity: 0;
+}
+.game-start.anime div.move-up{
+    animation: move-up 5s ease-in-out 0s 1;
+}
+
+
+
+button, a.btn{
+    padding: .7rem 3rem;
+    border: 1px solid var(--border);
+    margin: 1rem;
+    font-size: small;
+    font-weight: bold;
+    background-color: rgba(250, 250, 250, 0.05);
+    border-radius: 5rem;
+    color: white;
+    transition-duration: .2s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    cursor: pointer;
+    backdrop-filter: blur(4px);
+}
+button:hover, a.btn:hover{
+    background-color: white;
+    color: var(--primary);
+    padding: .7rem 3.5rem;
+}
+.services svg{
+    padding: 3rem;
+}
+.services svg path{
+    stroke: var(--mid-base);
+}
+.services > div, .team > div{
+    background-image: radial-gradient(at top left, rgba(71, 74, 241, 0.072), transparent, transparent, transparent), radial-gradient(at bottom, rgba(68, 237, 127, 0.08), transparent, transparent, transparent);
+    margin: 2rem;
+    border-radius: .5rem;
+    border: 1px solid var(--border);
+    padding: 2rem;
+    backdrop-filter: blur(40px);
+    width: 20vw;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0); /* Translucent background */
+    box-shadow: inset 0 0 10px rgba(255, 0, 0, 0.05),   /* Red inner glow */
+
+}
+.services > div:first-child, .team > div:first-child{
+    background-image: radial-gradient(at top right, rgba(71, 74, 241, 0.072), transparent, transparent, transparent), radial-gradient(at bottom left, rgba(237, 189, 68, 0.08), transparent, transparent, transparent);
+}
+.services > div:last-child, .team > div:last-child{
+    background-image: radial-gradient(at bottom left, rgba(71, 74, 241, 0.072), transparent, transparent, transparent), radial-gradient(at top, rgba(237, 68, 74, 0.08), transparent, transparent, transparent);
+}
+.team > div{
+    --round : 12rem;
+    border-top-left-radius: var(--round) /* 24px */;
+    border-top-right-radius: var(--round) /* 24px */;
+    border-bottom-left-radius: var(--round) /* 24px */;
+    border-bottom-right-radius: var(--round) /* 24px */;
+    height: 70vh;
+    width: 14vw;
+    padding: 0px;
+    padding-top: 1.5rem;
+}
+.team img{
+    width: 100%;
+    height: 80%;
+    border-top-left-radius: var(--round) /* 24px */;
+    border-top-right-radius: var(--round) /* 24px */;
+    border-bottom-left-radius: var(--round) /* 24px */;
+    border-bottom-right-radius: var(--round) /* 24px */;
+    opacity: 1;
+    object-fit: cover;
+    filter: brightness(1.5);
+}
+.team img:last-child, .team img:first-child{
+    filter: brightness(1);
+}
+.team img:last-child{
+    filter: brightness(0.7);
+}
+
+.blog-masonry{
+    --gap : .6rem;
+    gap: var(--gap);
+    columns: 150px;
+    width: auto;
+    min-width: 50%;
+    margin: .6rem .6rem;
+    max-height: 150vh;
+    overflow: hidden hidden;
+    rotate: 30deg;
+}
+.blog-masonry > *{
+    break-inside: avoid;
+    margin-bottom: var(--gap);
+}
+#login{
+    background-image: radial-gradient(at top left, rgba(71, 74, 241, 0.072), transparent, transparent, transparent), radial-gradient(at bottom, rgba(68, 237, 127, 0.08), transparent, transparent, transparent);
+    border-radius: .5rem;
+    border: 1px solid var(--border);
+    backdrop-filter: blur(40px);
+    height: auto;
+    background-color: rgba(255, 255, 255, 0); /* Translucent background */
+    box-shadow: inset 0 0 10px rgba(255, 0, 0, 0.05),   /* Red inner glow */
+}
+.thewhere{
+    font-family: Arial Rounded MT!important;
+    font-weight: bolder;
+    font-size: 2rem;
+    color: var(--textcolor);
+}

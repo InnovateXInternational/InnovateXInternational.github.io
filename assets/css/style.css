@@ -1,0 +1,67 @@
+@import url(wind.css);
+@import url(./../vendor/bootstrap-icons/bootstrap-icons.css);
+@import url(./tools.css);
+:root{
+    color-scheme: dark;
+}
+article p{
+    margin-block: 1rem;
+    text-align: justify;
+}
+article a{
+    color: #6366f1;
+    background-color: #6365f10d;
+    padding: 3px 8px;
+    border-radius: 5px;
+}
+article blockquote{
+    text-align: justify;
+    border-left: 5px solid gray;
+    padding: 10px 20px;
+    color: rgba(255, 255, 255, 0.646);
+}
+article img{
+    max-height: 50vh;
+    margin-inline: auto;
+}
+article{
+    text-align: justify;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+}
+footer{
+    border-top: 1px solid rgba(86, 86, 86, 0.5);
+}
+.ql-toolbar *{
+    color: white;
+}
+.ql-stroke{
+    stroke: white!important;
+}
+.ql-fill{
+    fill: white!important;
+}
+.ql-picker-options{
+    background-color: var(--primary)!important;
+}
+.ql-toolbar, .ql-container{
+    border: 1px solid #ccc3!important;
+}
+.ql-toolbar *{
+    border-color: #ccc3!important;
+}
+.ql-container{
+    height: 70%;
+}
+.ql-tooltip, .ql-tooltip *{
+    background-color: var(--primary)!important;
+    color: var(--textcolor)!important;
+    border-color: #ccc3!important;
+    outline: none!important;
+}
+.ql-action{
+    color: var(--highlight)!important;
+}
+.ql-snow .ql-editor .ql-code-block-container{
+    background-color: #020a22!important;
+}

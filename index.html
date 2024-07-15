@@ -1,8 +1,298 @@
-<html>
-  <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/index.css">
     <title>Innovatex</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-  </body>
+</head>
+<body class="flex flex-col md:flex-row">
+    <nav class="w-full z-50 md:w-auto h-auto md:h-full flex fixed md:relative flex-row py-4 md:py-4 px-4 bg-secondary justify-between md:justify-start w-100 backdrop-blur-lg md:backdrop-blur-0 text-mute md:flex-col">
+        <img class="w-9 opacity-85" src="assets/logo.svg">
+        <button id="btn-nav-toggle" class="!p-2 m-0 !text-lg !bg-none !bg-transparent !border-none md:hidden"><i class="bi bi-list text-white"></i></button>
+        <div class="nav-list h-[100vh] md:h-auto top-0 left-0 backdrop-blur-[100px] w-full py-6 flex-col fixed md:relative *:my-4 md:*:my-3 z-50 hidden md:flex">
+            <p class="md:!my-0"></p>
+            <a class="flex flex-col items-center hover:text-color" href="/">
+                <i class="bi bi-house"></i>
+                <span class="font-extralight text-[0.7rem]">Home</span>
+            </a>
+            <a class="flex flex-col items-center hover:text-color" href="blog.html">
+                <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                <svg class="*:stroke-zinc-400 *:hover:stroke-white" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M164.145 176.955C178.367 172.087 189.672 171.387 207.336 162.693C225 154 245.45 131 248.541 131C249.005 131 251.354 146.76 251.52 147.902C255.073 172.477 256.485 195.558 256.485 220.269C256.485 230.28 254.498 240.092 254.498 249.85C254.498 252.743 253.515 255.083 253.009 257.774C252.815 258.81 253.898 261.416 253.009 260.943C248.134 258.35 242.81 251.82 237.123 248.794C214.155 236.575 190.818 229 165.606 226.543" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+                <path opacity="0.503384" d="M165.605 277.96C159.726 264.534 157.521 249.358 156.299 234.28C154.83 216.152 157.056 178.913 154.83 175.685C148.638 166.706 89.3203 182.548 86.7502 189.534C85.0085 194.273 85.3115 202.355 84.7915 207.453C84.3699 211.577 83.2437 224.213 84.7915 228.421C85.1689 229.447 123.275 232.455 126.423 235.878C127.632 237.194 132.313 267.007 136.708 273.698C143.342 283.8 152.381 287.219 157.768 283.595" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round"/>
+                <path opacity="0.503384" d="M298.215 115C291.311 117.358 285.334 125 277.813 125" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round"/>
+                <path opacity="0.503384" d="M313.413 168.872C304.714 166.851 294.526 168.734 285.593 169.982" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round"/>
+                <path opacity="0.503384" d="M315.268 223.982C308.675 219.455 301.984 220.003 294.866 220.003" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round"/>
+                <path opacity="0.503384" d="M304.705 277C299.072 273.352 293.058 270.248 287.086 267" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round"/>
+                </svg>
+                <span class="font-extralight text-[0.7rem]">Blog</span>
+            </a>
+            <a class="flex flex-col items-center hover:text-color" href="#team">
+                <i class="bi bi-people"></i>
+                <span class="font-extralight text-[0.7rem]">Team</span>
+            </a>
+            <a class="flex flex-col items-center hover:text-color" href="#contact">
+                <i class="bi bi-telephone"></i>
+                <span class="font-extralight text-[0.7rem]">Contact</span>
+            </a>
+        </div>
+    </nav>
+
+    <main class="h-full w-full text-color overflow-y-auto">
+        <header class="md:py-6 -my-3 md:my-0 text-center align-middle h-full w-full flex flex-col items-center justify-center">
+            <h1 class="thewhere text-2xl font-display md:text-[1.8rem] mb-6 md:-translate-x-8 inline-block font-normal text-mute animate__animated animate__fadeIn" style="--animate-delay:5s;">Where</h1>
+            <div class="game text-color mb-8 md:-translate-x-8">
+                <div style="animation-duration: 3.5s;">
+                    <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                    <svg class="*:stroke-cyan-400" width="100%" height="100%" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M170.775 263.266C45.3695 89.9489 351.415 57.2556 235.074 265" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M223.927 294.786C208.714 303.727 197.077 301.397 183.349 292.717" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M223.931 323.947C209.382 329.705 191.961 332.227 179.771 321.113" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path opacity="0.503384" d="M200.609 264.023C205.622 256.118 213.14 177.545 195.739 180.506C177.592 183.597 183.172 214.637 200.609 217.109C230.615 221.366 231.089 172.082 212.779 191.558C204.814 200.032 202.007 211.527 194.927 220.563" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path opacity="0.503384" d="M216.241 90.0703C218.01 84.0801 217.416 77.9769 218.486 72" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" class="animate-pulse"/>
+                    <path opacity="0.503384" d="M146.354 105.559C143.63 101.989 141.597 97.8004 139.193 93.9424" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" class="animate-pulse"/>
+                    <path opacity="0.503384" d="M112.935 173.969C108.795 172.811 104.705 171.16 101 168.806" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" class="animate-pulse"/>
+                    <path opacity="0.503384" d="M271.67 121.048C275.349 119.093 278.89 116.852 282.411 114.595" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" class="animate-pulse"/>
+                    <path opacity="0.503384" d="M283.009 191.451C288.327 192.179 293.385 190.905 298.524 189.832" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" class="animate-pulse"/>
+                    </svg>
+                </div>
+                <div style="animation-duration:5s;">I</div>
+                <div style="animation-duration: 7s;">M</div>
+                <div style="animation-duration: 8s;">A</div>
+                <div style="animation-duration: 7s;">G</div>
+                <div style="animation-duration: 7.5s;">I</div>
+                <div style="animation-duration: 9s;">N</div>
+                <div style="animation-duration: 7s;">A</div>
+                <div style="animation-duration: 3s;">T</div>
+                <div style="animation-duration: 6.5s;">I</div>
+                <div style="animation-duration: 6s;">O</div>
+                <div style="animation-duration: 7s;">N</div>
+                <div style="animation-duration: 9s;"></div>
+                <div style="animation-duration: 8s;"></div>
+                <div style="animation-duration: 4s;"> </div>
+                <div style="animation-duration: 4s;">
+                    <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                    <svg class=" *:stroke-green-500 animate-bouncex" width="100%" height="100%" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M96 200C131.076 198 166.019 197 200.831 197C253.048 197 294.228 200 305 200" stroke-opacity="0.9" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M240 137C256.398 141.61 293.64 188.403 303.532 193.291C313.425 198.18 270.778 254.119 251.201 264" stroke-opacity="0.9" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div style="animation-duration: 6s;">M</div>
+                <div style="animation-duration: 4s;">E</div>
+                <div style="animation-duration: 2s;">E</div>
+                <div style="animation-duration: 4s;">T</div>
+                <div style="animation-duration: 8s;">S</div>
+                <div style="animation-duration: 4s;" class="text-indigo-500">
+                    <svg class="scale-75 *:stroke-indigo-500 *:fill-indigo-500" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 58.47125 61.27805" creator="Katerina Limpitsouni">
+                        <path class="opacity-0" d="M28.90769,.00787c-6.07761-.09003-12.40074,1.06636-17.54875,4.45708C6.92101,7.38797,3.72996,11.63288,1.87415,16.58637-1.72573,26.19511,.12855,37.6432,5.14993,46.39538c5.24091,9.13481,14.75711,15.71155,25.59413,14.79794,6.91784-.58321,13.60371-3.53175,18.6472-8.30504,5.3445-5.05817,8.48566-11.98427,9.00498-19.29893,1.0496-14.78379-9.02708-28.67242-23.27063-32.51665C33.09215,.52389,31.00332,.20071,28.90769,.00787c-1.34635-.12389-2.5,1.2377-2.5,2.5,0,1.45526,1.14981,2.37575,2.5,2.5,6.65332,.61224,12.8849,3.53313,17.44,8.43101,1.18938,1.27889,1.79365,2.05443,2.74015,3.51992,.8461,1.31004,1.58286,2.68668,2.21498,4.11202,.19303,.43525-.21162-.53383,.09146,.21385,.06297,.15533,.12474,.3112,.18511,.46755,.13573,.35148,.2645,.70561,.38674,1.062,.27111,.79043,.50876,1.59208,.71203,2.40261,.40745,1.62465,.59442,2.81121,.69891,4.13754,.12403,1.57429,.11957,3.15914-.02049,4.73223-.01361,.15291-.13577,1.19771-.08344,.82269-.04604,.32991-.10087,.65875-.1603,.9865-.14901,.82176-.33597,1.63676-.5607,2.44112-.79897,2.85973-2.23314,5.75244-3.95975,8.01096-2.09782,2.74409-4.6581,5.02349-7.62347,6.62458-2.44487,1.32007-4.74807,2.20956-7.73824,2.84201-.34205,.07235-.68548,.13821-1.0301,.19713-.20264,.03465-.91065,.13677-.35268,.06365-.66205,.08676-1.32817,.14555-1.99513,.17693-1.21755,.05727-2.42809,.00598-3.63997-.11547-.73962-.07412,.25118,.06295-.35065-.04926-.27221-.05075-.54588-.09244-.81756-.14653-.59666-.11879-1.18841-.26249-1.77311-.43056-.52038-.14958-1.03523-.31851-1.54317-.50602-.25266-.09327-.50244-.19327-.75236-.29358-.35339-.14185,.55912,.25646,.02087,.0059-.16209-.07545-.32592-.14702-.48761-.22342-1.02189-.48288-2.00739-1.04209-2.94929-1.66662-.4471-.29645-.88234-.60924-1.31081-.93189,.43779,.32967-.01945-.01818-.19757-.16364-.25505-.20828-.506-.42152-.75308-.63918-.85947-.75713-1.66992-1.56923-2.43042-2.4256-.36375-.4096-.70951-.83271-1.05576-1.25697-.37065-.45416,.19388,.28144-.2233-.2931-.18007-.24799-.36186-.49451-.5375-.74572-1.35033-1.93133-2.4823-4.00765-3.41299-6.17152,.25851,.60105-.08323-.21297-.13976-.35616-.10331-.26173-.20364-.52462-.30085-.78868-.21619-.58721-.41734-1.17999-.6033-1.77746-.3531-1.13447-.65152-2.28604-.89332-3.44933-.1142-.54941-.21578-1.10146-.30441-1.65556-.02118-.13239-.13767-.95016-.09026-.59077,.0559,.42371-.02143-.18645-.02538-.22215-.0205-.18489-.04194-.36963-.06072-.55472-.11506-1.13439-.175-2.27446-.17605-3.41471-.00106-1.15621,.05833-2.31253,.18339-3.46203,.01821-.16741,.14146-1.04027,.0344-.32224,.03985-.26726,.07997-.53429,.1255-.80068,.09554-.55906,.20731-1.11535,.3364-1.66765,.25541-1.09277,.57768-2.17027,.97143-3.22126,.10284-.2745,.2112-.54674,.32304-.81769-.21197,.5135-.0037,.01833,.09956-.20627,.2436-.52986,.50677-1.05081,.78976-1.56074,.25437-.45835,.52465-.90792,.81081-1.34713,.15911-.2442,.3231-.48528,.49193-.72286,.10901-.1534,.65837-.86142,.23894-.33582,.70013-.87734,1.45627-1.70485,2.28355-2.46427,.39885-.36613,.81253-.71524,1.23775-1.05029-.51417,.40514,.17479-.12119,.30084-.21062,.27711-.19661,.55883-.38667,.84499-.56987,.99849-.63922,2.04763-1.18388,3.12966-1.6665,.36755-.16394-.56039,.21773,.0451-.01763,.12499-.04859,.24918-.09913,.37441-.14714,.31738-.12168,.63729-.23678,.95931-.3456,.63087-.21318,1.27019-.40107,1.91527-.56619,.63733-.16314,1.2803-.30342,1.92724-.42279,.33418-.06166,.66935-.11615,1.0051-.16842,.49294-.07675,.12344-.01986,.02112-.00644,.23235-.03048,.46522-.05734,.69822-.08238,1.56632-.16834,3.14095-.22238,4.71556-.19906,3.21861,.04768,3.21982-4.9523,0-5Z" fill="#01010C" origin="undraw"/>
+                        <g class="*:stroke-indigo-500 *:fill-indigo-500"><path d="M18.05477,32.81948h18.74485c3.21726,0,3.22259-5,0-5H18.05477c-3.21726,0-3.22259,5,0,5h0Z" fill="#01010C"/><path d="M24.9272,20.94705v18.74485c0,3.21726,5,3.22259,5,0V20.94705c0-3.21726-5-3.22259-5,0h0Z" fill="#01010C"/></g>
+                    </svg>
+                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div style="animation-duration: 10s;">I</div>
+                <div style="animation-duration: 4.5s;">N</div>
+                <div style="animation-duration: 7s;">N</div>
+                <div style="animation-duration: 3s;">O</div>
+                <div style="animation-duration: 4s;">V</div>
+                <div style="animation-duration: 5s;">A</div>
+                <div style="animation-duration: 5.7s;">T</div>
+                <div style="animation-duration: 8s;">I</div>
+                <div style="animation-duration: 7s;">O</div>
+                <div style="animation-duration: 6.4s;">N</div>
+                <div style="animation-duration: 3s;" class="svg">
+                    <i class="bi before:scale-75 bi-rocket-takeoff rocket-launch text-blue-800"></i>
+                </div>
+            </div>
+            <div class="game-start d-none text-mute mb-8 -ml-3">
+                <div></div>
+                <div> </div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div> </div>
+                <div> </div>
+                <div></div>
+                <div></div>
+                <div> </div>
+                <div> </div>
+                <div> </div>
+                <div class="has-text">I</div>
+                <div class="has-text">N</div>
+                <div class="has-text">N</div>
+                <div class="has-text">O</div>
+                <div class="has-text">V</div>
+                <div class="has-text">A</div>
+                <div class="has-text">T</div>
+                <div class="has-text">E</div>
+                <div class="text-md lx"><i class="bi bi-chevron-right translate-x-1/4 -mr-1"></i><i class="bi bi-chevron-left -translate-x-1/4 -ml-1"></i></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div> </div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div> </div>
+                <div> </div>
+                <div></div>
+                <div></div>
+            </div>
+        </header>
+
+        <section id="about" class="py-6 pt-1 mb-4 h-full flex flex-row items-center">
+            <div class="flex flex-col justify-center items-center px-9 md:px-56 lg:px-96">
+                <h1 class="text-[2rem] md:text-[2.5rem] font-bold mb-4 backdrop-blur-lg reveal"> <span class="font-light">Welcome to</span>  InnovateX</h1>
+                <p class="w-full h-auto backdrop-blur-lg reveal view-inset-below text-justify md:text-left text-mute" >
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur quis quos alias non, enim, harum ea consequatur voluptatem, impedit voluptate commodi suscipit reprehenderit! Ducimus recusandae neque consequatur porro, sapiente quo.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus ipsum nostrum velit, aut nobis minus laborum quibusdam esse aliquam ducimus quod, doloremque praesentium iusto libero, nesciunt consequuntur veniam? Nam, quis!
+                </p>
+                <button class="reveal view-inset-below" style="animation-name: zoomInUp;">More</button>
+            </div>
+        </section>
+
+        <section class="py-6 h-auto md:h-full flex flex-col items-center">
+            <div class="flex flex-col justify-center items-center px-6 md:px-96">
+                <h2 class="text-[2rem] md:text-[2.5rem] font-bold mb-4 backdrop-blur-lg reveal"><span class="font-light">Discover our</span> Expertise</h2>
+                <div class="services flex flex-row *:!mx-1 md:*:!mx-2">
+                    <div style="animation-name: zoomInUp;" class="flex flex-col justify-between items-center shadow-lg shadow-gray-800 reveal view-inset-below !p-[0.7rem] md:!p-[2rem] !w-auto md:!w-[20vw]">
+                        <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                        <svg class="!p-[5px] md:!p-[3rem]" width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.5" d="M2 17C2 15.1144 2 14.1716 2.58579 13.5858C3.17157 13 4.11438 13 6 13H18C19.8856 13 20.8284 13 21.4142 13.5858C22 14.1716 22 15.1144 22 17C22 18.8856 22 19.8284 21.4142 20.4142C20.8284 21 19.8856 21 18 21H6C4.11438 21 3.17157 21 2.58579 20.4142C2 19.8284 2 18.8856 2 17Z" stroke-width="1.5"/>
+                        <path opacity="0.5" d="M2 6C2 4.11438 2 3.17157 2.58579 2.58579C3.17157 2 4.11438 2 6 2H18C19.8856 2 20.8284 2 21.4142 2.58579C22 3.17157 22 4.11438 22 6C22 7.88562 22 8.82843 21.4142 9.41421C20.8284 10 19.8856 10 18 10H6C4.11438 10 3.17157 10 2.58579 9.41421C2 8.82843 2 7.88562 2 6Z" stroke-width="1.5"/>
+                        <path d="M13.5 6L18 6" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M6 7L6 5" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M9 7L9 5" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M13.5 17H18" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M6 18L6 16" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M9 18L9 16" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                        <h4 class="font-semibold mx-4 text-sm md:text-lg">Hardware</h4>
+                    </div>
+                    <div style="animation-name: zoomInUp;" class="flex flex-col justify-between items-center shadow-lg shadow-gray-800 reveal view-inset-below !p-[0.7rem] md:!p-[2rem] !w-auto md:!w-[20vw]">
+                        <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                        <svg class="!p-[5px] md:!p-[3rem]" width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11 17H8C5.17157 17 3.75736 17 2.87868 16.1213C2 15.2426 2 13.8284 2 11V10C2 6.22876 2 4.34315 3.17157 3.17157C4.34315 2 6.22876 2 10 2H15.5C17.8346 2 19.0019 2 19.8856 2.47231C20.5833 2.84525 21.1548 3.4167 21.5277 4.11441C22 4.99805 22 6.16537 22 8.5" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M14 15C14 13.1144 14 12.1716 14.5858 11.5858C15.1716 11 16.1144 11 18 11C19.8856 11 20.8284 11 21.4142 11.5858C22 12.1716 22 13.1144 22 15V18C22 19.8856 22 20.8284 21.4142 21.4142C20.8284 22 19.8856 22 18 22C16.1144 22 15.1716 22 14.5858 21.4142C14 20.8284 14 19.8856 14 18V15Z" stroke-width="1.5"/>
+                        <path opacity="0.5" d="M19 20H17" stroke-width="1.5" stroke-linecap="round"/>
+                        <path opacity="0.5" d="M11 22V22.75C11.4142 22.75 11.75 22.4142 11.75 22H11ZM8 21.25C7.58579 21.25 7.25 21.5858 7.25 22C7.25 22.4142 7.58579 22.75 8 22.75V21.25ZM11.75 17C11.75 16.5858 11.4142 16.25 11 16.25C10.5858 16.25 10.25 16.5858 10.25 17H11.75ZM11 21.25H8V22.75H11V21.25ZM11.75 22V17H10.25V22H11.75Z" fill="#1C274C"/>
+                        <path opacity="0.5" d="M11 13H2" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                        <h4 class="font-semibold mx-4 text-sm md:text-lg">Software</h4>
+                    </div>
+                    <div style="animation-name: zoomInUp;" class="flex flex-col justify-between items-center shadow-lg shadow-gray-800 reveal view-inset-below !p-[0.7rem] md:!p-[2rem] !w-auto md:!w-[20vw]">
+                        <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                        <svg class="!p-[5px] md:!p-[3rem]" width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 22H2" stroke-width="1.5" stroke-linecap="round"/>
+                        <path opacity="0.5" d="M21 22V14.5C21 13.6716 20.3284 13 19.5 13H16.5C15.6716 13 15 13.6716 15 14.5V22" stroke-width="1.5"/>
+                        <path d="M15 22V5C15 3.58579 15 2.87868 14.5607 2.43934C14.1213 2 13.4142 2 12 2C10.5858 2 9.87868 2 9.43934 2.43934C9 2.87868 9 3.58579 9 5V22" stroke-width="1.5"/>
+                        <path opacity="0.5" d="M9 22V9.5C9 8.67157 8.32843 8 7.5 8H4.5C3.67157 8 3 8.67157 3 9.5V22" stroke-width="1.5"/>
+                        </svg>
+                        <h4 class="font-semibold mx-4 text-sm md:text-lg">Analytics</h4>
+                    </div>
+                </div>
+                <p class="w-full h-auto backdrop-blur-lg">
+
+                </p>
+            </div>
+        </section>
+
+
+        <section class="py-6 h-auto md:h-auto flex flex-col items-center md:max-h-full">
+            <div class="flex flex-row justify-center items-center px-9 md:px-24 lg:px-60">
+                <div class="z-10 w-[150%] md:w-[100%]">
+                    <h2 class="text-[2.3rem] md:text-[4rem] font-bold mb-4 reveal mt-10"><span class="font-light">Get to know what's on our</span> Mind</h2>
+                    <button class="bg-neutral-50 bg-opacity-5 backdrop-blur-sm mx-0 text-white font-light md:font-bold">Our Blog</button>
+                </div>
+                <div class="blog-masonry conceal translate-y-[40rem] md:translate-y-[5rem]" style="opacity: .8;">
+                    <a style="background-image: url(./assets/vendor/img/blog/blog-1.jpg);box-shadow: inset #060606ed 0px -90px 100px -10px" class="recent-post bg-cover text-xl font-bold tracking-wide bg-red-600 w-80 md:w-[auto] h-[300px] md:h-[250px] rounded-2xl flex flex-col justify-end p-4">
+                        <span>ML vs AI</span>
+                         <span class="text-sm text-opacity-10 tracking-wider font-light">12 May 2024</span>
+                    </a>
+                    <a style="background-image: url(./assets/vendor/img/blog/blog-3.jpg);box-shadow: inset #060606ed 0px -90px 100px -10px" class="recent-post bg-cover text-xl font-bold tracking-wide bg-red-600 w-80 md:w-[auto] h-[300px] md:h-[200px] rounded-2xl flex flex-col justify-end p-4">
+                        <span>How to start a...</span>
+                         <span class="text-sm text-opacity-10 tracking-wider font-light">12 May 2024</span>
+                    </a>
+                    <a style="background-image: url(./assets/vendor/img/blog/blog-2.jpg);box-shadow: inset #060606ed 0px -90px 100px -10px" class="recent-post bg-cover text-xl font-bold tracking-wide bg-red-600 w-80 md:w-[auto] h-[300px] md:h-[100px] rounded-2xl flex flex-col justify-end p-4">
+                        <span>Javascript for beginners...</span>
+                         <span class="text-sm text-opacity-10 tracking-wider font-light">12 May 2024</span>
+                    </a>
+                    <a style="background-image: url(./assets/vendor/img/blog/blog-4.jpg);box-shadow: inset #060606ed 0px -90px 100px -10px" class="recent-post bg-cover text-xl font-bold tracking-wide bg-red-600 w-80 md:w-[auto] h-[300px] md:h-[200px] rounded-2xl flex flex-col justify-end p-4">
+                        <span>Data analysis with python</span>
+                         <span class="text-sm text-opacity-10 tracking-wider font-light">12 May 2024</span>
+                    </a>
+                    <a style="background-image: url(./assets/vendor/img/blog/blog-recent-3.jpg);box-shadow: inset #060606ed 0px -90px 100px -10px" class="recent-post bg-cover text-xl font-bold tracking-wide bg-red-600 w-80 md:w-[auto] h-[300px] md:h-[250px] rounded-2xl flex flex-col justify-end p-4">
+                        <span>Communication Skills : Essential in...</span>
+                         <span class="text-sm text-opacity-10 tracking-wider font-light">12 May 2024</span>
+                    </a>
+                    <a style="background-image: url(./assets/vendor/img/blog/blog-recent-2.jpg);box-shadow: inset #060606ed 0px -90px 100px -10px" class="recent-post bg-cover text-xl font-bold tracking-wide bg-red-600 w-80 md:w-[auto] h-[300px] md:h-[150px] rounded-2xl flex flex-col justify-end p-4">
+                        <span>What if we all had money?</span>
+                         <span class="text-sm text-opacity-10 tracking-wider font-light">12 May 2024</span>
+                    </a>
+                </div>
+                
+
+            </div>
+
+        </section>
+
+        <section id="team" class="py-6 h-[100vh] flex flex-col items-center">
+            <div class="flex flex-col justify-center items-center px-6 md:px-96">
+                <h2 class="text-[2.5rem] font-bold mb-4 backdrop-blur-lg -translate-y-10 reveal"><span class="font-light">Meet the</span> Team</h2>
+                <div class="team flex flex-row *:!mx-1 md:*:!mx-8">
+                    <div style="animation-name: fadeInUp;animation-duration: 4s;" class="flex flex-col justify-between items-center shadow-lg shadow-gray-800 reveal !w-[27vw] md:!w-[14vw] !h-[60vh] md:!h-[70vh]">
+                        <h4 class="font-semibold mx-2 mt-6 text-sm md:text-lg text-center">Kunashe <br>
+                            <span class="opacity-50 text-xs">CEO</span> </h4>
+                            <img class="w-full h-52" src="./assets/img/team/team-1.jpg">
+                    </div>
+                    <div style="animation-name: fadeInUp;animation-duration: 5;" class="flex flex-col justify-between items-center shadow-lg shadow-gray-800 reveal !w-[27vw] md:!w-[14vw] !h-[60vh] md:!h-[70vh]">
+                        <h4 class="font-semibold mx-2 mt-6 text-sm md:text-lg text-center">Tanatswa <br>
+                            <span class="opacity-50 text-xs">Data Analyst</span> </h4>
+                            <img class="w-full h-52" src="./assets/img/team/team-2.jpg">
+                    </div>
+                    <div style="animation-name: fadeInUp;animation-duration: 4s;" class="flex flex-col justify-between items-center shadow-lg shadow-gray-800 reveal !w-[27vw] md:!w-[14vw] !h-[60vh] md:!h-[70vh]">
+                        <h4 class="font-semibold mx-2 mt-6 text-sm md:text-lg text-center">Tawananyasha <br>
+                        <span class="opacity-50 text-xs">Software Engineer</span> </h4>
+                        <img class="w-full h-52" src="./assets/img/team/team-5.jpg">
+                    </div>
+                </div>
+                <p class="w-full h-auto backdrop-blur-lg">
+
+                </p>
+            </div>
+        </section>
+
+
+        <section id="contact">
+            <div class="flex flex-col justify-center items-center px-6 md:px-72 lg:px-96 py-10">
+                <h2 class="text-[2.5rem] font-bold mb-4 backdrop-blur-lg -translate-y-10 reveal">Let's Innovate the Future, Together</h2>
+                <p class="text-mute opacity-50 reveal">
+                    We're always seeking new ways to simplify and accelerate your workflow with cutting-edge technology and innovative solutions. From advanced software development to state-of-the-art hardware and data analytics, our services are designed to help you achieve more.
+                    <br><br>
+                    But we can't do this alone — we want your feedback as we continue to refine and improve our offerings. Share your thoughts and ideas with us to help shape the future of innovation.
+                </p>
+                <a class="btn w-fit !mx-0 my-2 reveal">Email Us</a>
+            </div>
+        </section>
+
+        <footer class="flex flex-row justify-between items-center py-6 px-2 md:px-10 opacity-40 pt-32">
+            <p class="text-xl text-mute *:mx-2">
+                <i class="bi bi-linkedin"></i>
+                <i class="bi bi-whatsapp"></i>
+                <i class="bi bi-facebook"></i>
+            </p>
+            <a href="">info@innovatex.com</a>
+        </footer>
+
+    </main>
+</body>
+<script src="./assets/js/index.js"></script>
+<script>
+</script>
+
 </html>

@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root{
+    --primary : #010719;/*#242424*/
+    --secondary: #010a22;/*#303030, just the primary width an added hs*l* */;
+    --textcolor:#dbdbdb;
+    --highlight:#005DF5;/*#6366f1*/
+    --hightlight-rgb:99, 102, 241;
+    --base1:#2DEBF3;/*80%*/
+    --base2:#005DF5;/*80%*/
+    --mid-base:#179adf;
+    --border:#1e2536;
+    --mute:hsl(0, 0%, 75%);
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.d-none{
+    display: none!important;
+}
+.bg-primary{
+    background-color: var(--primary);
+}
+.bg-secondary{
+    background-color: var(--secondary);
+}
+.bg-base1{
+    background-color: var(--base1);
+}
+.bg-base2{
+    background-color: var(--base2);
+}
+.text-base1{
+    color: var(--base1);
+}
+.text-base2{
+    color: var(--highlight);
+}
+.text-mid-base{
+    color: var(--mid-base);
+}
+.text-color{
+    color: var(--textcolor);
+}
+.text-mute{
+    color: var(--mute);
+}
+.text-highlight{
+    color: var(--highlight);
+}
+.noscroll::-webkit-scrollbar{
+    display: none;
+}
+.shadow-fade{
+    box-shadow: outset #060606ed 0px -90px 100px -10px;
+}
