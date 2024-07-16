@@ -4,14 +4,20 @@
 :root{
     --primary : #010719;/*#242424*/
     --secondary: #010a22;/*#303030, just the primary width an added hs*l* */;
-    --textcolor:#dbdbdb;
+    --textcolor:white;
     --highlight:#005DF5;/*#6366f1*/
     --hightlight-rgb:99, 102, 241;
     --base1:#2DEBF3;/*80%*/
+    --base1-rgb:45 235 243;
     --base2:#005DF5;/*80%*/
+    --base2-rgb:0 93 245;
     --mid-base:#179adf;
     --border:#1e2536;
     --mute:hsl(0, 0%, 75%);
+    scroll-behavior:smooth;
+}
+:root{
+    color-scheme: dark;
 }
 body{
     margin: 0px;

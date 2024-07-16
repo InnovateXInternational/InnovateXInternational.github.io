@@ -3,9 +3,7 @@
 @import url(./../vendor/bootstrap-icons/bootstrap-icons.css);
 @import url(index-scroll.css);
 @import url(./../vendor/animate.min.css);
-:root{
-    color-scheme: dark;
-}
+
 html{
     position: relative;
     scroll-padding: 2rem;
@@ -51,14 +49,25 @@ body{
 nav{
     border-right: 1px solid var(--border);
 }
-body:has(nav #btn-nav-toggle:hover) main{
+#btn-nav-toggle{
+    appearance: none;
+    -webkit-appearance: none;
+}
+#btn-nav-toggle:checked{
+    z-index: 9999;
+    filter: blur(0px)!important;
+}
+#btn-nav-toggle:checked::before{
+    content:"\f62a";
+}
+body:has(nav #btn-nav-toggle:checked) main{
     filter: blur(100px);
 }
-nav:has(#btn-nav-toggle:hover) > *:not(div.nav-list){
+nav:has(#btn-nav-toggle:checked) > *:not(div.nav-list){
     filter: blur(100px);
 }
-nav:has(#btn-nav-toggle:hover) > .nav-list{
-    z-index: 99999;
+nav:has(#btn-nav-toggle:checked) > .nav-list{
+    z-index: 999;
     display: flex;position: fixed;
     top: 0px;
     left: 0px;
@@ -253,7 +262,7 @@ button:hover, a.btn:hover{
 .services svg path{
     stroke: var(--mid-base);
 }
-.services > div, .team > div{
+.services > a, .team > div{
     background-image: radial-gradient(at top left, rgba(71, 74, 241, 0.072), transparent, transparent, transparent), radial-gradient(at bottom, rgba(68, 237, 127, 0.08), transparent, transparent, transparent);
     margin: 2rem;
     border-radius: .5rem;
@@ -266,10 +275,10 @@ button:hover, a.btn:hover{
     box-shadow: inset 0 0 10px rgba(255, 0, 0, 0.05),   /* Red inner glow */
 
 }
-.services > div:first-child, .team > div:first-child{
+.services > a:first-child, .team > div:first-child{
     background-image: radial-gradient(at top right, rgba(71, 74, 241, 0.072), transparent, transparent, transparent), radial-gradient(at bottom left, rgba(237, 189, 68, 0.08), transparent, transparent, transparent);
 }
-.services > div:last-child, .team > div:last-child{
+.services > a:last-child, .team > div:last-child{
     background-image: radial-gradient(at bottom left, rgba(71, 74, 241, 0.072), transparent, transparent, transparent), radial-gradient(at top, rgba(237, 68, 74, 0.08), transparent, transparent, transparent);
 }
 .team > div{
