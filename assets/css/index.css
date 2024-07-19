@@ -108,7 +108,7 @@ main{
     text-align: center;
     justify-content: center;
     align-items: center;
-    background-color : var(primary);
+    background-color : var(--primary);
     user-select: none;
     animation-name: fadeIn;
     animation-duration: 1s;
