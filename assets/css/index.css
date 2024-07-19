@@ -108,7 +108,7 @@ main{
     text-align: center;
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(5rem);
+    background-color : var(primary);
     user-select: none;
     animation-name: fadeIn;
     animation-duration: 1s;
