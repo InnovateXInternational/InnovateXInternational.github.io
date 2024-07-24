@@ -31,9 +31,9 @@ html{
 }
 @media (max-width:768px) {
     *{
-        --game-w:2rem;
-        --game-h:3rem;
-        --game-f:1.5rem;
+        --game-w:1.8rem;
+        --game-h:2.7rem;
+        --game-f:1.2rem;
         --dot-size:75px;
     }
 }
@@ -94,12 +94,12 @@ main{
 .font-display{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-.game, .game-start{
+.game{
     display: grid;
     grid-template-columns: var(--game-w) var(--game-w) var(--game-w) var(--game-w) var(--game-w) var(--game-w) var(--game-w) var(--game-w) var(--game-w) var(--game-w) var(--game-w) var(--game-w);
     grid-template-rows: var(--game-h) var(--game-h) var(--game-h);
 }
-.game > div,.game-start > div{
+.game > div{
     font-size: var(--game-f);
     border: 1px solid var(--border);
     font-weight: bolder;
@@ -108,23 +108,20 @@ main{
     text-align: center;
     justify-content: center;
     align-items: center;
-    background-color : var(--primary);
+    /*backdrop-filter: blur(5rem);*/
     user-select: none;
     animation-name: fadeIn;
     animation-duration: 1s;
     animation-delay: 0ms;
+    background-color: var(--primary);
 }
-.game > div:empty, .game-start > div:empty{
+.game > div:empty{
     border-width: 0px;
 }
-.game i.bi:not(.no-bold):before, .game-start i.bi:not(.no-bold):before{
+.game i.bi:not(.no-bold):before{
     font-weight: bolder!important;
 }
-.game-start i{
-    font-size: 2.5rem!important;
-    margin-top: 5px;
-    animation: rotatex 1.5s ease-in-out 0ms 1;
-}
+
 
 
 @keyframes starmotion {
